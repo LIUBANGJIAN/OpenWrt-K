@@ -326,6 +326,7 @@ chmod +x /usr/share/cmzj/openwrt-k_tool.sh
 uci commit
 /etc/init.d/sing-box stop
 /etc/init.d/sing-box disable
-sed -i 's_https\?://downloads.openwrt.org_https://mirrors.tuna.tsinghua.edu.cn/openwrt_' /etc/opkg/distfeeds.conf
+#sed -i 's_https\?://downloads.openwrt.org_https://mirrors.tuna.tsinghua.edu.cn/openwrt_' /etc/opkg/distfeeds.conf
+sed -i 's_https\?://downloads.openwrt.org_https://mirrors.aliyun.com/openwrt_' /etc/opkg/distfeeds.conf
 exit 0
 
