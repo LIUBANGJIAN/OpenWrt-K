@@ -5,7 +5,7 @@ name: Build OpenWrt-K
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 */4 * * *'
   push:
     paths:
       - '.github/**'
