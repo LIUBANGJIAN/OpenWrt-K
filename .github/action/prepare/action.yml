@@ -17,3 +17,7 @@ runs:
         python -m pip install -U pip
         python -m pip install -r /opt/OpenWrt-K/build_helper/requirements.txt
       shell: bash
+    - name: Set up Go
+       uses: actions/setup-go@v4
+       with:
+       go-version: '1.24'
